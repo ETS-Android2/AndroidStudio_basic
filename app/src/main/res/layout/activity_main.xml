@@ -36,4 +36,20 @@
 
     </Button>
 
+    <EditText
+        android:id="@+id/et_intent"
+        android:layout_width="300dp"
+        android:hint="sub page에 보낼 string 입력"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to SubActivity! (intent test)">
+
+    </Button>
+
 </LinearLayout>
