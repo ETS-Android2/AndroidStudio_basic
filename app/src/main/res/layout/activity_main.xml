@@ -21,4 +21,19 @@
         android:text="Happy Days~"
         />
 
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your ID">
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button">
+
+    </Button>
+
 </LinearLayout>
