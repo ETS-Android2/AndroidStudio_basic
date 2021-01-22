@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_intent;
     private String str;
     ImageView iv_test;
+    Button btn_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btn_id = findViewById(R.id.btn_id);
         et_intent = findViewById(R.id.et_intent);
         btn_intent = findViewById(R.id.btn_intent);
+        btn_list = findViewById(R.id.btn_list);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "This is toast message!!", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        btn_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
             }
         });
     }
