@@ -3,6 +3,7 @@ package com.example.textview_01;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv_test;
     Button btn_list;
     Button btn_navi;
+    EditText et_save;
+    String shared = "file";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btn_intent = findViewById(R.id.btn_intent);
         btn_list = findViewById(R.id.btn_list);
         btn_navi = findViewById(R.id.btn_navi);
+        et_save = findViewById(R.id.et_save);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +77,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // sharedPreferences는 어플 삭제시에는 사라짐
+        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+        String value = sharedPreferences.getString("savedval","");
+        et_save.setText(value); // savedval에 저장되어 있는것을 불러오기
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        String value = et_save.getText().toString();
+        editor.putString("savedval",value); //savedval 이라는 이름으로 value 저장해둠
+        editor.commit();    //save
+
     }
 }

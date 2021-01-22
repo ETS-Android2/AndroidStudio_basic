@@ -72,4 +72,12 @@
         android:layout_height="wrap_content"
         android:text="Go to Navigation Activity!"></Button>
 
+    <EditText
+        android:id="@+id/et_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="save 할 text를 입력"
+        >
+    </EditText>
+
 </LinearLayout>
