@@ -80,4 +80,10 @@
         >
     </EditText>
 
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to WebView Activity!"></Button>
+
 </LinearLayout>

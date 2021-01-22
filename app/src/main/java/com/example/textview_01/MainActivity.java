@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_navi;
     EditText et_save;
     String shared = "file";
+    Button btn_web;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btn_list = findViewById(R.id.btn_list);
         btn_navi = findViewById(R.id.btn_navi);
         et_save = findViewById(R.id.et_save);
+        btn_web = findViewById(R.id.btn_web);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
         String value = sharedPreferences.getString("savedval","");
         et_save.setText(value); // savedval에 저장되어 있는것을 불러오기
+
+        btn_web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
