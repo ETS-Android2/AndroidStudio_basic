@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private String str;
     ImageView iv_test;
     Button btn_list;
+    Button btn_navi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         et_intent = findViewById(R.id.et_intent);
         btn_intent = findViewById(R.id.btn_intent);
         btn_list = findViewById(R.id.btn_list);
+        btn_navi = findViewById(R.id.btn_navi);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_navi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NaviActivity.class);
                 startActivity(intent);
             }
         });

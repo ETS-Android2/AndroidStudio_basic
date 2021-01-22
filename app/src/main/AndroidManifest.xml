@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TextView_01">
-        <activity android:name=".ListViewActivity"></activity>
-        <activity android:name=".SubActivity"></activity>
+        <activity
+            android:name=".NaviActivity"
+            android:label="@string/title_activity_navi"
+            android:theme="@style/Theme.TextView_01.NoActionBar"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".SubActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

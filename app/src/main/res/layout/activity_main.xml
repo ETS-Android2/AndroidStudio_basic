@@ -66,4 +66,10 @@
         android:layout_height="wrap_content"
         android:text="Go to ListView Activity!"></Button>
 
+    <Button
+        android:id="@+id/btn_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Navigation Activity!"></Button>
+
 </LinearLayout>
