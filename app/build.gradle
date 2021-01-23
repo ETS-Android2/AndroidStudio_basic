@@ -38,7 +38,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
-    implementation 'gun0912.ted:tedpermission:2.0.0'    //권한 묻는창
+    implementation 'gun0912.ted:tedpermission:2.0.0'  //권한 묻는창
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

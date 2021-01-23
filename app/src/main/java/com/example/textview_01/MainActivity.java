@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_web;
     Button btn_custom;
     Button btn_camera;
+    Button btn_recycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btn_web = findViewById(R.id.btn_web);
         btn_custom = findViewById(R.id.btn_custom);
         btn_camera = findViewById(R.id.btn_camera);
+        btn_recycler = findViewById(R.id.btn_recycler);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_recycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
             }
         });

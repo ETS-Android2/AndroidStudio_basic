@@ -1,101 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
+    android:background="@drawable/backgroundimg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_200"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Happy Days~"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
 
-    <EditText
-        android:id="@+id/et_id"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter your ID">
-    </EditText>
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy Days~"
+            />
 
-    </Button>
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your ID">
+        </EditText>
 
-    <EditText
-        android:id="@+id/et_intent"
-        android:layout_width="300dp"
-        android:hint="sub page에 보낼 string 입력"
-        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_id"
+            android:backgroundTint="#FF9C9C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button">
 
-    </EditText>
+        </Button>
 
-    <Button
-        android:id="@+id/btn_intent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to SubActivity! (intent test)">
+        <EditText
+            android:id="@+id/et_intent"
+            android:layout_width="300dp"
+            android:hint="sub page에 보낼 string 입력"
+            android:layout_height="wrap_content">
 
-    </Button>
+        </EditText>
 
-    <ImageView
-        android:id="@+id/iv_test"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher">
+        <Button
+            android:id="@+id/btn_intent"
+            android:backgroundTint="#FFA06C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to SubActivity! (intent test)">
 
-    </ImageView>
+        </Button>
 
-    <Button
-        android:id="@+id/btn_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to ListView Activity!"></Button>
+        <ImageView
+            android:id="@+id/iv_test"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher">
 
-    <Button
-        android:id="@+id/btn_navi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to Navigation Activity!"></Button>
+        </ImageView>
 
-    <EditText
-        android:id="@+id/et_save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="save 할 text를 입력"
-        >
-    </EditText>
+        <Button
+            android:id="@+id/btn_list"
+            android:backgroundTint="#EAC042"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to ListView Activity!"></Button>
 
-    <Button
-        android:id="@+id/btn_web"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to WebView Activity!"></Button>
+        <Button
+            android:id="@+id/btn_navi"
+            android:backgroundTint="#558A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Navigation Activity!"></Button>
 
-    <Button
-        android:id="@+id/btn_custom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to Custom navigation Activity!"></Button>
+        <EditText
+            android:id="@+id/et_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="save 할 text를 입력"
+            >
+        </EditText>
 
-    <Button
-        android:id="@+id/btn_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to Camera Activity!"></Button>
+        <Button
+            android:id="@+id/btn_web"
+            android:backgroundTint="#63A9FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to WebView Activity!"></Button>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_custom"
+            android:backgroundTint="#4154B6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Custom navigation Activity!"></Button>
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:backgroundTint="#806BDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Camera Activity!"></Button>
+
+        <Button
+            android:id="@+id/btn_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to RecyclerView Activity!"></Button>
+
+    </LinearLayout>
+</ScrollView>
