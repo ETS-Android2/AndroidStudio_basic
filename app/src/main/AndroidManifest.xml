@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TextView_01"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".ThreadHandlerActivity"></activity>
+        <activity android:name=".FragmentActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".CustomNaviActivity" />
