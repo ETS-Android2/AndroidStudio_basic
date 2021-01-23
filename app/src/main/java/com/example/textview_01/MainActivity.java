@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et_save;
     String shared = "file";
     Button btn_web;
+    Button btn_cumton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn_navi = findViewById(R.id.btn_navi);
         et_save = findViewById(R.id.et_save);
         btn_web = findViewById(R.id.btn_web);
+        btn_cumton = findViewById(R.id.btn_cumton);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_cumton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CustomNaviActivity.class);
                 startActivity(intent);
             }
         });

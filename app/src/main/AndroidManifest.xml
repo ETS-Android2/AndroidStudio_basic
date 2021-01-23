@@ -2,17 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.textview_01">
 
-    <uses-permission android:name="android.permission.INTERNET"/>   // 인터넷 사용 권한 android9부터는 아래 usesCleartextTraffic도 추가
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TextView_01">
-        <activity android:name=".WebViewActivity"></activity>
+        android:theme="@style/Theme.TextView_01"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CustomNaviActivity"></activity>
+        <activity android:name=".WebViewActivity" />
         <activity
             android:name=".NaviActivity"
             android:label="@string/title_activity_navi"

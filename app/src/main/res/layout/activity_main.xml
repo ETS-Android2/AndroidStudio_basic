@@ -86,4 +86,10 @@
         android:layout_height="wrap_content"
         android:text="Go to WebView Activity!"></Button>
 
+    <Button
+        android:id="@+id/btn_cumton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Custom navigation Activity!"></Button>
+
 </LinearLayout>
