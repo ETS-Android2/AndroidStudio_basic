@@ -87,9 +87,15 @@
         android:text="Go to WebView Activity!"></Button>
 
     <Button
-        android:id="@+id/btn_cumton"
+        android:id="@+id/btn_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to Custom navigation Activity!"></Button>
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Camera Activity!"></Button>
 
 </LinearLayout>

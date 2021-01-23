@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     EditText et_save;
     String shared = "file";
     Button btn_web;
-    Button btn_cumton;
+    Button btn_custom;
+    Button btn_camera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         btn_navi = findViewById(R.id.btn_navi);
         et_save = findViewById(R.id.et_save);
         btn_web = findViewById(R.id.btn_web);
-        btn_cumton = findViewById(R.id.btn_cumton);
+        btn_custom = findViewById(R.id.btn_custom);
+        btn_camera = findViewById(R.id.btn_camera);
 
 
         btn_id.setOnClickListener(new View.OnClickListener() {
@@ -95,10 +97,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_cumton.setOnClickListener(new View.OnClickListener() {
+        btn_custom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CustomNaviActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
                 startActivity(intent);
             }
         });
