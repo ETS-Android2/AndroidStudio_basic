@@ -134,6 +134,13 @@
             android:backgroundTint="#516EFF"
             android:text="Go to Thread and Handler Activity!"></Button>
 
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#51B9FF"
+            android:text="Go to Dialog Activity!"></Button>
+
 
     </LinearLayout>
 </ScrollView>
