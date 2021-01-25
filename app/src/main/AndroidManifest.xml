@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TextView_01"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DialogActivity"></activity>
+        <activity android:name=".VideoRecordActivity"></activity>
+        <activity android:name=".DialogActivity" />
         <activity android:name=".ThreadHandlerActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".RecyclerViewActivity" />
@@ -36,7 +38,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MusicService"/>     //music service에서 필요!
+        <service android:name=".MusicService" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

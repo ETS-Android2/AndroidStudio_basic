@@ -33,7 +33,6 @@ public class SubActivity extends AppCompatActivity {
                 startService(new Intent((getApplicationContext()),MusicService.class));
             }
         });
-
         btn_musicstop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

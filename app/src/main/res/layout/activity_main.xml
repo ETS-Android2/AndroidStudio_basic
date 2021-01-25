@@ -141,6 +141,12 @@
             android:backgroundTint="#51B9FF"
             android:text="Go to Dialog Activity!"></Button>
 
+        <Button
+            android:id="@+id/btn_video"
+            android:backgroundTint="#51FFEB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Video Recording Activity!"></Button>
 
     </LinearLayout>
 </ScrollView>

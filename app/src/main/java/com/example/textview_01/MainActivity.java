@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_fragment;
     Button btn_thread;
     Button btn_dialog;
+    Button btn_video;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btn_fragment = findViewById(R.id.btn_fragment);
         btn_thread = findViewById(R.id.btn_thread);
         btn_dialog = findViewById(R.id.btn_dialog);
-
+        btn_video = findViewById(R.id.btn_video);
 
         btn_id.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,6 +150,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DialogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoRecordActivity.class);
                 startActivity(intent);
             }
         });
