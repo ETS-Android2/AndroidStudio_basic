@@ -57,7 +57,7 @@
             android:backgroundTint="#FFA06C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go to SubActivity! (intent test)">
+            android:text="Go to SubActivity N Music">
 
         </Button>
 

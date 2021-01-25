@@ -36,6 +36,8 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".MusicService"/>     //music service에서 필요!
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.textview_01"

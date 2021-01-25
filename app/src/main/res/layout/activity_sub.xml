@@ -25,4 +25,16 @@
 
     </TextView>
 
+    <Button
+        android:id="@+id/btn_musicstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music atart"></Button>
+
+    <Button
+        android:id="@+id/btn_musicstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music stop"></Button>
+
 </LinearLayout>
